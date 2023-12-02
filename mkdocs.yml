@@ -1,0 +1,56 @@
+site_name: Heta docs
+site_author: Fajox
+
+# Repository
+repo_name: FajoX1/heta
+repo_url: https://github.com/FajoX1/heta
+edit_uri: ""
+
+copyright: Copyright &copy; 2023-2025 Fajox
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: ru
+  palette:
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - 'Introduction': index.md
+  - 'search': search.md
+  - 'decode_hash': decode_hash.md
+  - 'repo': repo.md
+  - 'module': module.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/hetalibchat
+      name: "Telegram chat"
+    - icon: fontawesome/brands/github
+      link: https://github.com/FajoX1/heta
+      name: GitHub
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - meta
+  - attr_list
+  - toc:
+      permalink: true
